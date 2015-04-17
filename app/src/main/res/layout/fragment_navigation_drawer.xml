@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".NavigationDrawerFragment">
+
+    <LinearLayout
+
+        android:paddingTop="2dp"
+        android:background="#4c4c4c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="2dp">
+        <RelativeLayout
+            android:background="@color/green"
+            android:id="@+id/trTrainer"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:clickable="true"
+            android:visibility="visible">
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.sked.gdg.view.RoundedImageView
+                    android:src="@drawable/button_green"
+                    android:id="@+id/ivRowImageDummy"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:focusable="false" />
+                <com.sked.gdg.view.RoundedImageView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/ic_contact_picture_180_holo_light"
+                    android:id="@+id/ivRowImage"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:focusable="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Joe Trainer"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--    <ListView
+            android:id="@+id/lvProfileRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />-->
+
+    <ListView
+
+        android:id="@+id/lvNavigationDrawerDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+
+        />
+</LinearLayout>

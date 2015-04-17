@@ -1,0 +1,34 @@
+<resources>
+
+    <style name="AppTheme" parent="GoogleNavigationDrawerTheme.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorAccent">@color/primary_material_light</item>
+    </style>
+
+
+    <style name="ConversationsTheme.LargerText" parent="AppTheme">
+        <item name="TextSizeInfo">14sp</item>
+        <item name="TextSizeBody">16sp</item>
+        <item name="TextSizeHeadline">22sp</item>
+    </style>
+
+    <style name="ConversationsActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/primary</item>
+        <item name="android:backgroundStacked">@color/primarydark</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+    <style name="ConversationsActionBarWidget" parent="android:Theme.Holo.Light">
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">
+            @android:style/Widget.Holo.Light.ListView.DropDown
+        </item>
+    </style>
+
+    <style name="ConversationsActionBarTabs" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+
+</resources>
